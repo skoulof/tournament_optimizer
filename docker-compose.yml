@@ -1,0 +1,18 @@
+services:
+  badminton-planner:
+    build: .
+    image: badminton-planner:latest
+    container_name: badminton-planner
+    ports:
+      - "8000:8000"          # open http://<host>:8000
+    volumes:
+      - planner-data:/data   # run history (setup and schedule runs)
+    environment:
+      # One shared password for the whole site (no accounts). Remove or leave empty for an open LAN instance.
+      APP_PASSWORD: "change-me"
+    restart: unless-stopped
+    # The optimizer uses every CPU it is given. Uncomment to keep some for other services:
+    # cpus: 4
+
+volumes:
+  planner-data:

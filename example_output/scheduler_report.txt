@@ -1,0 +1,57 @@
+Optimizing 174 matches, 87 teams, 9 courts (cpsat, 60s)...
+  heuristic: 2 run(s) x 30s (30s), objectives 64,285, 66,140
+  CP-SAT: FEASIBLE in 30s, objective 63,225
+
+Example tournament: 174 matches, 87 teams, 9 courts, mean match 30 min, min rest 20 min
+Solver: CP-SAT (FEASIBLE)
+  (weights: gaps free up to 60 min, day length 87/min, KO wait 1, wait tiers [>60:+2, >90:+6, >120:+20, >180:+100], pool spread 2, series spread 5, overtime 870/min)
+
+SCHEDULE STATISTICS
+  Day            08:30 -> 20:00 (11h30)   limit 20:00: ok, 0h00 margin
+  Courts         use 84% on average, every court busy until 16:40 (end of the last full stretch), idle court time 16h30 (11h40 of it in the last 2 h); 15.1 matches/hour
+  Use per hour   08h 89%  09h 100%  10h 100%  11h 98%  12h 100%  13h 100%  14h 100%  15h 100%  16h 91%  17h 63%  18h 43%  19h 28%
+  WAIT RATING    B (good): 9.4 min of avoidable wait per gap (beyond the practical minimum of 30 min)
+                 scale: A <= 5, B <= 15, C <= 30, D <= 45, E > 45 min
+  All gaps       any wait between two matches of a team: mean 37, median 30, P90 60, worst 120 min
+  Long gaps      > 60 min: 16 | > 90 min: 3 | > 120 min: 0 | > 180 min: 0   (of 261; KO entries counted at their worst case)
+  Pool gaps      between pool matches: mean 35, median 30, P90 60, worst 90 min (189 gaps)
+  Before KO      pool -> first KO match: expected mean 49 min; worst case for a team (own last pool match -> first KO match) 120 min
+  Between KO     between knockout rounds: mean 33, median 30, worst 60 min (32 gaps)
+  Pool idle      per team over its pool phase: mean 76, median 60, P90 120, worst 200 min; total for all teams 109h30
+  Compactness    pools last +7% longer than their shortest span (worst pool +33%); series pool phases +24% longer than their minimum (see table)
+  Time on site   (from convocation) if out after the pools: mean 3h21, max 5h50; as a finalist (worst path): mean 7h15, max 8h50
+  Playing share  time on court / time on site: 48% if out after the pools, 44% for a finalist
+  Longest stay   B-07 (B P2): first match 08:40 -> final ends 17:00 = 8h20, of which 4h50 waiting
+  Convocations   19 different times, 08:00 -> 16:20
+  Longest gaps   90 min B-16 (#17->#52); 80 min B-18 (#25->#56); 80 min B-08 (#34->#64); 80 min B-07 (#35->#65); 80 min B-02 (#43->#75)
+
+  Series  teams matches   pool phase stretch   last mean gap worst gap KO wait KO rounds longest stay  rating
+  A          24      47  11:40-16:30    +93%  19:50       42       120     120        50         8h10    B 14
+  B          18      39  08:40-14:00    +19%  17:00       41        90      90        40         8h20    B 13
+  C          28      55  08:30-11:30    +20%  16:00       33        60      60        60         7h30     A 5
+  D          12      23  14:40-17:30    +13%  20:00       31        70      70        20         5h20     B 6
+  E           5      10  16:00-20:00     +0%  20:00       31        60       -         -         4h00     B 6
+  (stretch = how much longer the pool phase lasts than its shortest possible length; mean/worst gap = any wait between two matches; KO wait = worst case, own last pool match -> first KO match; KO rounds = worst gap between knockout rounds; longest stay = first match -> end of the final on the worst path)
+
+SIMULATED DAY (300 runs, durations lognormal with the planned mean and CV 25%; matches called any time early when both teams are present and rested)
+                                              plan        mean         P90       worst
+  End of day                                 20:00       20:24       20:44       21:36
+  Court use                                    84%         81%         79%         76%
+  Avoidable wait per gap                 9.4 min B  11.8 min B  12.9 min B  14.2 min B
+  All gaps, mean                            37 min      39 min      40 min      42 min
+  All gaps, P90                             60 min      66 min      70 min      75 min
+  All gaps, worst                          120 min     131 min     148 min     182 min
+  Gaps over 120 min                              0         1.4           3           5
+  Pool gap, mean                            35 min      37 min      39 min      41 min
+  Pool gap, worst                           90 min     100 min     119 min     151 min
+  Before KO, expected mean                  49 min      53 min      55 min      61 min
+  Before KO, worst case                    120 min     130 min     148 min     182 min
+  Between KO rounds, worst                  60 min      84 min     102 min     157 min
+  On site if out after pools, mean            3h21        3h19        3h27        3h39
+  On site as finalist, worst                  8h50        9h03        9h25       10h14
+  Longest stay (1st match->final)             8h20        8h46        9h07       10h02
+  Start vs plan: mean -3 min, P10 -20, P90 +14, P99 +36; matches > 15 min late: 9%
+  Convocation -> first match: mean 23 min (plan 30), P90 33, worst 62
+  (for court use, P90 and worst are the low side)
+
+Plan checked (courts, rests, stage order, replay). Files in example_output/: schedule.csv, convocations.csv, team_stats.csv, statistics.txt, statistics.json, schedule.html, plan.json

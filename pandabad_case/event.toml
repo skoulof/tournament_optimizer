@@ -1,0 +1,55 @@
+# Example event for tournament_setup.py
+# Times are HH:MM, durations in minutes.
+
+[event]
+name = "Example tournament pandabad"
+start_time = "08:30"
+end_time = "20:00"          # optional: the setup checks that the formats fit before this
+courts = 7
+match_duration = 30         # mean duration incl. warm-up and court changeover
+min_rest = 20               # TIME_DELTA: end of a match -> earliest start of the team's next one
+convocation_lead = 30       # teams are convoked this long before their first match
+convocation_rounding = 5    # convocation times rounded down to a multiple of this
+
+[setup]
+pool_sizes = [3, 4, 5]      # allowed pool sizes
+preferred_pool_size = 4
+qualifiers_per_pool = [1, 2]
+preferred_qualifiers = 2
+single_pool_max = 6         # series with up to 6 teams may play one round robin
+min_matches_per_team = 2
+planning_efficiency = 0.90  # used only for the "does it fit" estimate
+
+# Penalties used to rank formats (lower = preferred)
+[setup.weights]
+pool_size = 0.5             # per pool whose size differs from preferred_pool_size (per team of difference)
+qualifiers = 3              # per step away from preferred_qualifiers
+byes = 3.0                  # times the share of byes in the knockout draw
+
+# One block per series. `teams` is a count, or a list of names in seeding order
+# (best first) - pools are then filled in snake order.
+[[series]]
+name = "NP"
+teams = 24
+
+[[series]]
+name = "DD"
+teams = 29
+
+[[series]]
+name = "DR"
+teams = 15
+
+[[series]]
+name = "RR"
+teams = 10
+# match_duration = 35       # optional per-series mean duration
+
+# [[series]]
+# name = "E"
+# teams = ["Martin / Leroy", "Petit / Moreau", "Durand / Girard", "Lambert / Faure", "Roux / Blanc"]
+
+# Optional per-series format constraints:
+#   pools = 5            force the number of pools
+#   qualifiers = 1       force the number of teams leaving each pool
+#   single_pool = true   force (or with false, forbid) a single round robin

@@ -1,0 +1,11 @@
+event:
+  name: Tight day
+  start_time: "08:00"
+  end_time: "17:00"
+  courts: 7
+  match_duration: 30
+  min_rest: 20
+series:
+  - {name: S1, teams: 32}
+  - {name: S2, teams: 24}
+  - {name: S3, teams: 16, pools: 4, qualifiers: 2}

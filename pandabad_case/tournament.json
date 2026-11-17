@@ -1,0 +1,3184 @@
+{
+ "format_version": 1,
+ "generated_by": "tournament_setup.py",
+ "event": {
+  "name": "Example tournament pandabad",
+  "start_time": "08:30",
+  "end_time": "20:00",
+  "courts": 7,
+  "match_duration": 30,
+  "min_rest": 20,
+  "convocation_lead": 30,
+  "convocation_rounding": 5
+ },
+ "series": [
+  {
+   "name": "NP",
+   "n_teams": 24,
+   "match_duration": null,
+   "format": {
+    "type": "pools_ko",
+    "pool_sizes": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "description": "8 pools (8x3), top 2 -> KO of 16 (draw 16)",
+    "qualifiers_per_pool": 2,
+    "bracket_size": 16,
+    "byes": 0,
+    "ko_rounds": 4
+   },
+   "teams": [
+    {
+     "id": "NP-01",
+     "name": "NP-01",
+     "seed": 1,
+     "pool": "P1"
+    },
+    {
+     "id": "NP-02",
+     "name": "NP-02",
+     "seed": 2,
+     "pool": "P2"
+    },
+    {
+     "id": "NP-03",
+     "name": "NP-03",
+     "seed": 3,
+     "pool": "P3"
+    },
+    {
+     "id": "NP-04",
+     "name": "NP-04",
+     "seed": 4,
+     "pool": "P4"
+    },
+    {
+     "id": "NP-05",
+     "name": "NP-05",
+     "seed": 5,
+     "pool": "P5"
+    },
+    {
+     "id": "NP-06",
+     "name": "NP-06",
+     "seed": 6,
+     "pool": "P6"
+    },
+    {
+     "id": "NP-07",
+     "name": "NP-07",
+     "seed": 7,
+     "pool": "P7"
+    },
+    {
+     "id": "NP-08",
+     "name": "NP-08",
+     "seed": 8,
+     "pool": "P8"
+    },
+    {
+     "id": "NP-09",
+     "name": "NP-09",
+     "seed": 9,
+     "pool": "P8"
+    },
+    {
+     "id": "NP-10",
+     "name": "NP-10",
+     "seed": 10,
+     "pool": "P7"
+    },
+    {
+     "id": "NP-11",
+     "name": "NP-11",
+     "seed": 11,
+     "pool": "P6"
+    },
+    {
+     "id": "NP-12",
+     "name": "NP-12",
+     "seed": 12,
+     "pool": "P5"
+    },
+    {
+     "id": "NP-13",
+     "name": "NP-13",
+     "seed": 13,
+     "pool": "P4"
+    },
+    {
+     "id": "NP-14",
+     "name": "NP-14",
+     "seed": 14,
+     "pool": "P3"
+    },
+    {
+     "id": "NP-15",
+     "name": "NP-15",
+     "seed": 15,
+     "pool": "P2"
+    },
+    {
+     "id": "NP-16",
+     "name": "NP-16",
+     "seed": 16,
+     "pool": "P1"
+    },
+    {
+     "id": "NP-17",
+     "name": "NP-17",
+     "seed": 17,
+     "pool": "P1"
+    },
+    {
+     "id": "NP-18",
+     "name": "NP-18",
+     "seed": 18,
+     "pool": "P2"
+    },
+    {
+     "id": "NP-19",
+     "name": "NP-19",
+     "seed": 19,
+     "pool": "P3"
+    },
+    {
+     "id": "NP-20",
+     "name": "NP-20",
+     "seed": 20,
+     "pool": "P4"
+    },
+    {
+     "id": "NP-21",
+     "name": "NP-21",
+     "seed": 21,
+     "pool": "P5"
+    },
+    {
+     "id": "NP-22",
+     "name": "NP-22",
+     "seed": 22,
+     "pool": "P6"
+    },
+    {
+     "id": "NP-23",
+     "name": "NP-23",
+     "seed": 23,
+     "pool": "P7"
+    },
+    {
+     "id": "NP-24",
+     "name": "NP-24",
+     "seed": 24,
+     "pool": "P8"
+    }
+   ],
+   "pools": [
+    {
+     "name": "P1",
+     "teams": [
+      "NP-01",
+      "NP-16",
+      "NP-17"
+     ]
+    },
+    {
+     "name": "P2",
+     "teams": [
+      "NP-02",
+      "NP-15",
+      "NP-18"
+     ]
+    },
+    {
+     "name": "P3",
+     "teams": [
+      "NP-03",
+      "NP-14",
+      "NP-19"
+     ]
+    },
+    {
+     "name": "P4",
+     "teams": [
+      "NP-04",
+      "NP-13",
+      "NP-20"
+     ]
+    },
+    {
+     "name": "P5",
+     "teams": [
+      "NP-05",
+      "NP-12",
+      "NP-21"
+     ]
+    },
+    {
+     "name": "P6",
+     "teams": [
+      "NP-06",
+      "NP-11",
+      "NP-22"
+     ]
+    },
+    {
+     "name": "P7",
+     "teams": [
+      "NP-07",
+      "NP-10",
+      "NP-23"
+     ]
+    },
+    {
+     "name": "P8",
+     "teams": [
+      "NP-08",
+      "NP-09",
+      "NP-24"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "DD",
+   "n_teams": 29,
+   "match_duration": null,
+   "format": {
+    "type": "pools_ko",
+    "pool_sizes": [
+     4,
+     4,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "description": "9 pools (2x4 + 7x3), top 2 -> KO of 18 (draw 32, 14 byes)",
+    "qualifiers_per_pool": 2,
+    "bracket_size": 32,
+    "byes": 14,
+    "ko_rounds": 5
+   },
+   "teams": [
+    {
+     "id": "DD-01",
+     "name": "DD-01",
+     "seed": 1,
+     "pool": "P1"
+    },
+    {
+     "id": "DD-02",
+     "name": "DD-02",
+     "seed": 2,
+     "pool": "P2"
+    },
+    {
+     "id": "DD-03",
+     "name": "DD-03",
+     "seed": 3,
+     "pool": "P3"
+    },
+    {
+     "id": "DD-04",
+     "name": "DD-04",
+     "seed": 4,
+     "pool": "P4"
+    },
+    {
+     "id": "DD-05",
+     "name": "DD-05",
+     "seed": 5,
+     "pool": "P5"
+    },
+    {
+     "id": "DD-06",
+     "name": "DD-06",
+     "seed": 6,
+     "pool": "P6"
+    },
+    {
+     "id": "DD-07",
+     "name": "DD-07",
+     "seed": 7,
+     "pool": "P7"
+    },
+    {
+     "id": "DD-08",
+     "name": "DD-08",
+     "seed": 8,
+     "pool": "P8"
+    },
+    {
+     "id": "DD-09",
+     "name": "DD-09",
+     "seed": 9,
+     "pool": "P9"
+    },
+    {
+     "id": "DD-10",
+     "name": "DD-10",
+     "seed": 10,
+     "pool": "P9"
+    },
+    {
+     "id": "DD-11",
+     "name": "DD-11",
+     "seed": 11,
+     "pool": "P8"
+    },
+    {
+     "id": "DD-12",
+     "name": "DD-12",
+     "seed": 12,
+     "pool": "P7"
+    },
+    {
+     "id": "DD-13",
+     "name": "DD-13",
+     "seed": 13,
+     "pool": "P6"
+    },
+    {
+     "id": "DD-14",
+     "name": "DD-14",
+     "seed": 14,
+     "pool": "P5"
+    },
+    {
+     "id": "DD-15",
+     "name": "DD-15",
+     "seed": 15,
+     "pool": "P4"
+    },
+    {
+     "id": "DD-16",
+     "name": "DD-16",
+     "seed": 16,
+     "pool": "P3"
+    },
+    {
+     "id": "DD-17",
+     "name": "DD-17",
+     "seed": 17,
+     "pool": "P2"
+    },
+    {
+     "id": "DD-18",
+     "name": "DD-18",
+     "seed": 18,
+     "pool": "P1"
+    },
+    {
+     "id": "DD-19",
+     "name": "DD-19",
+     "seed": 19,
+     "pool": "P1"
+    },
+    {
+     "id": "DD-20",
+     "name": "DD-20",
+     "seed": 20,
+     "pool": "P2"
+    },
+    {
+     "id": "DD-21",
+     "name": "DD-21",
+     "seed": 21,
+     "pool": "P3"
+    },
+    {
+     "id": "DD-22",
+     "name": "DD-22",
+     "seed": 22,
+     "pool": "P4"
+    },
+    {
+     "id": "DD-23",
+     "name": "DD-23",
+     "seed": 23,
+     "pool": "P5"
+    },
+    {
+     "id": "DD-24",
+     "name": "DD-24",
+     "seed": 24,
+     "pool": "P6"
+    },
+    {
+     "id": "DD-25",
+     "name": "DD-25",
+     "seed": 25,
+     "pool": "P7"
+    },
+    {
+     "id": "DD-26",
+     "name": "DD-26",
+     "seed": 26,
+     "pool": "P8"
+    },
+    {
+     "id": "DD-27",
+     "name": "DD-27",
+     "seed": 27,
+     "pool": "P9"
+    },
+    {
+     "id": "DD-28",
+     "name": "DD-28",
+     "seed": 28,
+     "pool": "P2"
+    },
+    {
+     "id": "DD-29",
+     "name": "DD-29",
+     "seed": 29,
+     "pool": "P1"
+    }
+   ],
+   "pools": [
+    {
+     "name": "P1",
+     "teams": [
+      "DD-01",
+      "DD-18",
+      "DD-19",
+      "DD-29"
+     ]
+    },
+    {
+     "name": "P2",
+     "teams": [
+      "DD-02",
+      "DD-17",
+      "DD-20",
+      "DD-28"
+     ]
+    },
+    {
+     "name": "P3",
+     "teams": [
+      "DD-03",
+      "DD-16",
+      "DD-21"
+     ]
+    },
+    {
+     "name": "P4",
+     "teams": [
+      "DD-04",
+      "DD-15",
+      "DD-22"
+     ]
+    },
+    {
+     "name": "P5",
+     "teams": [
+      "DD-05",
+      "DD-14",
+      "DD-23"
+     ]
+    },
+    {
+     "name": "P6",
+     "teams": [
+      "DD-06",
+      "DD-13",
+      "DD-24"
+     ]
+    },
+    {
+     "name": "P7",
+     "teams": [
+      "DD-07",
+      "DD-12",
+      "DD-25"
+     ]
+    },
+    {
+     "name": "P8",
+     "teams": [
+      "DD-08",
+      "DD-11",
+      "DD-26"
+     ]
+    },
+    {
+     "name": "P9",
+     "teams": [
+      "DD-09",
+      "DD-10",
+      "DD-27"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "DR",
+   "n_teams": 15,
+   "match_duration": null,
+   "format": {
+    "type": "pools_ko",
+    "pool_sizes": [
+     5,
+     5,
+     5
+    ],
+    "description": "3 pools (3x5), top 2 -> KO of 6 (draw 8, 2 byes)",
+    "qualifiers_per_pool": 2,
+    "bracket_size": 8,
+    "byes": 2,
+    "ko_rounds": 3
+   },
+   "teams": [
+    {
+     "id": "DR-01",
+     "name": "DR-01",
+     "seed": 1,
+     "pool": "P1"
+    },
+    {
+     "id": "DR-02",
+     "name": "DR-02",
+     "seed": 2,
+     "pool": "P2"
+    },
+    {
+     "id": "DR-03",
+     "name": "DR-03",
+     "seed": 3,
+     "pool": "P3"
+    },
+    {
+     "id": "DR-04",
+     "name": "DR-04",
+     "seed": 4,
+     "pool": "P3"
+    },
+    {
+     "id": "DR-05",
+     "name": "DR-05",
+     "seed": 5,
+     "pool": "P2"
+    },
+    {
+     "id": "DR-06",
+     "name": "DR-06",
+     "seed": 6,
+     "pool": "P1"
+    },
+    {
+     "id": "DR-07",
+     "name": "DR-07",
+     "seed": 7,
+     "pool": "P1"
+    },
+    {
+     "id": "DR-08",
+     "name": "DR-08",
+     "seed": 8,
+     "pool": "P2"
+    },
+    {
+     "id": "DR-09",
+     "name": "DR-09",
+     "seed": 9,
+     "pool": "P3"
+    },
+    {
+     "id": "DR-10",
+     "name": "DR-10",
+     "seed": 10,
+     "pool": "P3"
+    },
+    {
+     "id": "DR-11",
+     "name": "DR-11",
+     "seed": 11,
+     "pool": "P2"
+    },
+    {
+     "id": "DR-12",
+     "name": "DR-12",
+     "seed": 12,
+     "pool": "P1"
+    },
+    {
+     "id": "DR-13",
+     "name": "DR-13",
+     "seed": 13,
+     "pool": "P1"
+    },
+    {
+     "id": "DR-14",
+     "name": "DR-14",
+     "seed": 14,
+     "pool": "P2"
+    },
+    {
+     "id": "DR-15",
+     "name": "DR-15",
+     "seed": 15,
+     "pool": "P3"
+    }
+   ],
+   "pools": [
+    {
+     "name": "P1",
+     "teams": [
+      "DR-01",
+      "DR-06",
+      "DR-07",
+      "DR-12",
+      "DR-13"
+     ]
+    },
+    {
+     "name": "P2",
+     "teams": [
+      "DR-02",
+      "DR-05",
+      "DR-08",
+      "DR-11",
+      "DR-14"
+     ]
+    },
+    {
+     "name": "P3",
+     "teams": [
+      "DR-03",
+      "DR-04",
+      "DR-09",
+      "DR-10",
+      "DR-15"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "RR",
+   "n_teams": 10,
+   "match_duration": null,
+   "format": {
+    "type": "pools_ko",
+    "pool_sizes": [
+     4,
+     3,
+     3
+    ],
+    "description": "3 pools (1x4 + 2x3), top 1 -> KO of 3 (draw 4, 1 bye)",
+    "qualifiers_per_pool": 1,
+    "bracket_size": 4,
+    "byes": 1,
+    "ko_rounds": 2
+   },
+   "teams": [
+    {
+     "id": "RR-01",
+     "name": "RR-01",
+     "seed": 1,
+     "pool": "P1"
+    },
+    {
+     "id": "RR-02",
+     "name": "RR-02",
+     "seed": 2,
+     "pool": "P2"
+    },
+    {
+     "id": "RR-03",
+     "name": "RR-03",
+     "seed": 3,
+     "pool": "P3"
+    },
+    {
+     "id": "RR-04",
+     "name": "RR-04",
+     "seed": 4,
+     "pool": "P3"
+    },
+    {
+     "id": "RR-05",
+     "name": "RR-05",
+     "seed": 5,
+     "pool": "P2"
+    },
+    {
+     "id": "RR-06",
+     "name": "RR-06",
+     "seed": 6,
+     "pool": "P1"
+    },
+    {
+     "id": "RR-07",
+     "name": "RR-07",
+     "seed": 7,
+     "pool": "P1"
+    },
+    {
+     "id": "RR-08",
+     "name": "RR-08",
+     "seed": 8,
+     "pool": "P2"
+    },
+    {
+     "id": "RR-09",
+     "name": "RR-09",
+     "seed": 9,
+     "pool": "P3"
+    },
+    {
+     "id": "RR-10",
+     "name": "RR-10",
+     "seed": 10,
+     "pool": "P1"
+    }
+   ],
+   "pools": [
+    {
+     "name": "P1",
+     "teams": [
+      "RR-01",
+      "RR-06",
+      "RR-07",
+      "RR-10"
+     ]
+    },
+    {
+     "name": "P2",
+     "teams": [
+      "RR-02",
+      "RR-05",
+      "RR-08"
+     ]
+    },
+    {
+     "name": "P3",
+     "teams": [
+      "RR-03",
+      "RR-04",
+      "RR-09"
+     ]
+    }
+   ]
+  }
+ ],
+ "matches": [
+  {
+   "id": "NP-P1-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "NP-16",
+    "NP-17"
+   ]
+  },
+  {
+   "id": "NP-P1-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "NP-01",
+    "NP-17"
+   ]
+  },
+  {
+   "id": "NP-P1-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "NP-01",
+    "NP-16"
+   ]
+  },
+  {
+   "id": "NP-P2-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "NP-15",
+    "NP-18"
+   ]
+  },
+  {
+   "id": "NP-P2-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "NP-02",
+    "NP-18"
+   ]
+  },
+  {
+   "id": "NP-P2-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "NP-02",
+    "NP-15"
+   ]
+  },
+  {
+   "id": "NP-P3-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 1,
+   "teams": [
+    "NP-14",
+    "NP-19"
+   ]
+  },
+  {
+   "id": "NP-P3-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 2,
+   "teams": [
+    "NP-03",
+    "NP-19"
+   ]
+  },
+  {
+   "id": "NP-P3-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 3,
+   "teams": [
+    "NP-03",
+    "NP-14"
+   ]
+  },
+  {
+   "id": "NP-P4-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 1,
+   "teams": [
+    "NP-13",
+    "NP-20"
+   ]
+  },
+  {
+   "id": "NP-P4-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 2,
+   "teams": [
+    "NP-04",
+    "NP-20"
+   ]
+  },
+  {
+   "id": "NP-P4-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 3,
+   "teams": [
+    "NP-04",
+    "NP-13"
+   ]
+  },
+  {
+   "id": "NP-P5-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 1,
+   "teams": [
+    "NP-12",
+    "NP-21"
+   ]
+  },
+  {
+   "id": "NP-P5-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 2,
+   "teams": [
+    "NP-05",
+    "NP-21"
+   ]
+  },
+  {
+   "id": "NP-P5-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 3,
+   "teams": [
+    "NP-05",
+    "NP-12"
+   ]
+  },
+  {
+   "id": "NP-P6-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 1,
+   "teams": [
+    "NP-11",
+    "NP-22"
+   ]
+  },
+  {
+   "id": "NP-P6-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 2,
+   "teams": [
+    "NP-06",
+    "NP-22"
+   ]
+  },
+  {
+   "id": "NP-P6-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 3,
+   "teams": [
+    "NP-06",
+    "NP-11"
+   ]
+  },
+  {
+   "id": "NP-P7-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 1,
+   "teams": [
+    "NP-10",
+    "NP-23"
+   ]
+  },
+  {
+   "id": "NP-P7-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 2,
+   "teams": [
+    "NP-07",
+    "NP-23"
+   ]
+  },
+  {
+   "id": "NP-P7-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 3,
+   "teams": [
+    "NP-07",
+    "NP-10"
+   ]
+  },
+  {
+   "id": "NP-P8-1",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 1,
+   "teams": [
+    "NP-09",
+    "NP-24"
+   ]
+  },
+  {
+   "id": "NP-P8-2",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 2,
+   "teams": [
+    "NP-08",
+    "NP-24"
+   ]
+  },
+  {
+   "id": "NP-P8-3",
+   "series": "NP",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 3,
+   "teams": [
+    "NP-08",
+    "NP-09"
+   ]
+  },
+  {
+   "id": "NP-R16-1",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P1",
+     "after": [
+      "NP-P1-1",
+      "NP-P1-2",
+      "NP-P1-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P3",
+     "after": [
+      "NP-P3-1",
+      "NP-P3-2",
+      "NP-P3-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-2",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P8",
+     "after": [
+      "NP-P8-1",
+      "NP-P8-2",
+      "NP-P8-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P8",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P2",
+     "after": [
+      "NP-P2-1",
+      "NP-P2-2",
+      "NP-P2-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-3",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P4",
+     "after": [
+      "NP-P4-1",
+      "NP-P4-2",
+      "NP-P4-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P4",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P7",
+     "after": [
+      "NP-P7-1",
+      "NP-P7-2",
+      "NP-P7-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P7",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-4",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P5",
+     "after": [
+      "NP-P5-1",
+      "NP-P5-2",
+      "NP-P5-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P5",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P6",
+     "after": [
+      "NP-P6-1",
+      "NP-P6-2",
+      "NP-P6-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P6",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-5",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P2",
+     "after": [
+      "NP-P2-1",
+      "NP-P2-2",
+      "NP-P2-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P5",
+     "after": [
+      "NP-P5-1",
+      "NP-P5-2",
+      "NP-P5-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P5",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-6",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P7",
+     "after": [
+      "NP-P7-1",
+      "NP-P7-2",
+      "NP-P7-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P7",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P8",
+     "after": [
+      "NP-P8-1",
+      "NP-P8-2",
+      "NP-P8-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P8",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-7",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P3",
+     "after": [
+      "NP-P3-1",
+      "NP-P3-2",
+      "NP-P3-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P4",
+     "after": [
+      "NP-P4-1",
+      "NP-P4-2",
+      "NP-P4-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P4",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-R16-8",
+   "series": "NP",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P6",
+     "after": [
+      "NP-P6-1",
+      "NP-P6-2",
+      "NP-P6-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P6",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P1",
+     "after": [
+      "NP-P1-1",
+      "NP-P1-2",
+      "NP-P1-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-QF-1",
+   "series": "NP",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "Winner NP-R16-1",
+     "after": [
+      "NP-R16-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-1"
+     }
+    },
+    {
+     "label": "Winner NP-R16-2",
+     "after": [
+      "NP-R16-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-QF-2",
+   "series": "NP",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "Winner NP-R16-3",
+     "after": [
+      "NP-R16-3"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-3"
+     }
+    },
+    {
+     "label": "Winner NP-R16-4",
+     "after": [
+      "NP-R16-4"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-QF-3",
+   "series": "NP",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "Winner NP-R16-5",
+     "after": [
+      "NP-R16-5"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-5"
+     }
+    },
+    {
+     "label": "Winner NP-R16-6",
+     "after": [
+      "NP-R16-6"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-6"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-QF-4",
+   "series": "NP",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "Winner NP-R16-7",
+     "after": [
+      "NP-R16-7"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-7"
+     }
+    },
+    {
+     "label": "Winner NP-R16-8",
+     "after": [
+      "NP-R16-8"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-R16-8"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-SF-1",
+   "series": "NP",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner NP-QF-1",
+     "after": [
+      "NP-QF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-QF-1"
+     }
+    },
+    {
+     "label": "Winner NP-QF-2",
+     "after": [
+      "NP-QF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-QF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-SF-2",
+   "series": "NP",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner NP-QF-3",
+     "after": [
+      "NP-QF-3"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-QF-3"
+     }
+    },
+    {
+     "label": "Winner NP-QF-4",
+     "after": [
+      "NP-QF-4"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-QF-4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "NP-F",
+   "series": "NP",
+   "stage": "ko",
+   "round": "F",
+   "round_index": 4,
+   "slots": [
+    {
+     "label": "Winner NP-SF-1",
+     "after": [
+      "NP-SF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-SF-1"
+     }
+    },
+    {
+     "label": "Winner NP-SF-2",
+     "after": [
+      "NP-SF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "NP-SF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-P1-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "DD-01",
+    "DD-29"
+   ]
+  },
+  {
+   "id": "DD-P1-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "DD-18",
+    "DD-19"
+   ]
+  },
+  {
+   "id": "DD-P1-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "DD-01",
+    "DD-19"
+   ]
+  },
+  {
+   "id": "DD-P1-4",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "DD-29",
+    "DD-18"
+   ]
+  },
+  {
+   "id": "DD-P1-5",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "DD-01",
+    "DD-18"
+   ]
+  },
+  {
+   "id": "DD-P1-6",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "DD-19",
+    "DD-29"
+   ]
+  },
+  {
+   "id": "DD-P2-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "DD-02",
+    "DD-28"
+   ]
+  },
+  {
+   "id": "DD-P2-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "DD-17",
+    "DD-20"
+   ]
+  },
+  {
+   "id": "DD-P2-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "DD-02",
+    "DD-20"
+   ]
+  },
+  {
+   "id": "DD-P2-4",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "DD-28",
+    "DD-17"
+   ]
+  },
+  {
+   "id": "DD-P2-5",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "DD-02",
+    "DD-17"
+   ]
+  },
+  {
+   "id": "DD-P2-6",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "DD-20",
+    "DD-28"
+   ]
+  },
+  {
+   "id": "DD-P3-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 1,
+   "teams": [
+    "DD-16",
+    "DD-21"
+   ]
+  },
+  {
+   "id": "DD-P3-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 2,
+   "teams": [
+    "DD-03",
+    "DD-21"
+   ]
+  },
+  {
+   "id": "DD-P3-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 3,
+   "teams": [
+    "DD-03",
+    "DD-16"
+   ]
+  },
+  {
+   "id": "DD-P4-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 1,
+   "teams": [
+    "DD-15",
+    "DD-22"
+   ]
+  },
+  {
+   "id": "DD-P4-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 2,
+   "teams": [
+    "DD-04",
+    "DD-22"
+   ]
+  },
+  {
+   "id": "DD-P4-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P4",
+   "round": 3,
+   "teams": [
+    "DD-04",
+    "DD-15"
+   ]
+  },
+  {
+   "id": "DD-P5-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 1,
+   "teams": [
+    "DD-14",
+    "DD-23"
+   ]
+  },
+  {
+   "id": "DD-P5-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 2,
+   "teams": [
+    "DD-05",
+    "DD-23"
+   ]
+  },
+  {
+   "id": "DD-P5-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P5",
+   "round": 3,
+   "teams": [
+    "DD-05",
+    "DD-14"
+   ]
+  },
+  {
+   "id": "DD-P6-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 1,
+   "teams": [
+    "DD-13",
+    "DD-24"
+   ]
+  },
+  {
+   "id": "DD-P6-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 2,
+   "teams": [
+    "DD-06",
+    "DD-24"
+   ]
+  },
+  {
+   "id": "DD-P6-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P6",
+   "round": 3,
+   "teams": [
+    "DD-06",
+    "DD-13"
+   ]
+  },
+  {
+   "id": "DD-P7-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 1,
+   "teams": [
+    "DD-12",
+    "DD-25"
+   ]
+  },
+  {
+   "id": "DD-P7-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 2,
+   "teams": [
+    "DD-07",
+    "DD-25"
+   ]
+  },
+  {
+   "id": "DD-P7-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P7",
+   "round": 3,
+   "teams": [
+    "DD-07",
+    "DD-12"
+   ]
+  },
+  {
+   "id": "DD-P8-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 1,
+   "teams": [
+    "DD-11",
+    "DD-26"
+   ]
+  },
+  {
+   "id": "DD-P8-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 2,
+   "teams": [
+    "DD-08",
+    "DD-26"
+   ]
+  },
+  {
+   "id": "DD-P8-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P8",
+   "round": 3,
+   "teams": [
+    "DD-08",
+    "DD-11"
+   ]
+  },
+  {
+   "id": "DD-P9-1",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P9",
+   "round": 1,
+   "teams": [
+    "DD-10",
+    "DD-27"
+   ]
+  },
+  {
+   "id": "DD-P9-2",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P9",
+   "round": 2,
+   "teams": [
+    "DD-09",
+    "DD-27"
+   ]
+  },
+  {
+   "id": "DD-P9-3",
+   "series": "DD",
+   "stage": "pool",
+   "pool": "P9",
+   "round": 3,
+   "teams": [
+    "DD-09",
+    "DD-10"
+   ]
+  },
+  {
+   "id": "DD-R32-1",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R32",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "2nd P3",
+     "after": [
+      "DD-P3-1",
+      "DD-P3-2",
+      "DD-P3-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 2
+     }
+    },
+    {
+     "label": "2nd P2",
+     "after": [
+      "DD-P2-1",
+      "DD-P2-2",
+      "DD-P2-3",
+      "DD-P2-4",
+      "DD-P2-5",
+      "DD-P2-6"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R32-2",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R32",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "2nd P4",
+     "after": [
+      "DD-P4-1",
+      "DD-P4-2",
+      "DD-P4-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P4",
+      "rank": 2
+     }
+    },
+    {
+     "label": "2nd P1",
+     "after": [
+      "DD-P1-1",
+      "DD-P1-2",
+      "DD-P1-3",
+      "DD-P1-4",
+      "DD-P1-5",
+      "DD-P1-6"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-1",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P1",
+     "after": [
+      "DD-P1-1",
+      "DD-P1-2",
+      "DD-P1-3",
+      "DD-P1-4",
+      "DD-P1-5",
+      "DD-P1-6"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 1
+     }
+    },
+    {
+     "label": "Winner DD-R32-1",
+     "after": [
+      "DD-R32-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R32-1"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-2",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P8",
+     "after": [
+      "DD-P8-1",
+      "DD-P8-2",
+      "DD-P8-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P8",
+      "rank": 1
+     }
+    },
+    {
+     "label": "1st P9",
+     "after": [
+      "DD-P9-1",
+      "DD-P9-2",
+      "DD-P9-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P9",
+      "rank": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-3",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P4",
+     "after": [
+      "DD-P4-1",
+      "DD-P4-2",
+      "DD-P4-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P4",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P6",
+     "after": [
+      "DD-P6-1",
+      "DD-P6-2",
+      "DD-P6-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P6",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-4",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P5",
+     "after": [
+      "DD-P5-1",
+      "DD-P5-2",
+      "DD-P5-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P5",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P7",
+     "after": [
+      "DD-P7-1",
+      "DD-P7-2",
+      "DD-P7-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P7",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-5",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P2",
+     "after": [
+      "DD-P2-1",
+      "DD-P2-2",
+      "DD-P2-3",
+      "DD-P2-4",
+      "DD-P2-5",
+      "DD-P2-6"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 1
+     }
+    },
+    {
+     "label": "Winner DD-R32-2",
+     "after": [
+      "DD-R32-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R32-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-6",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P7",
+     "after": [
+      "DD-P7-1",
+      "DD-P7-2",
+      "DD-P7-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P7",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P9",
+     "after": [
+      "DD-P9-1",
+      "DD-P9-2",
+      "DD-P9-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P9",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-7",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P3",
+     "after": [
+      "DD-P3-1",
+      "DD-P3-2",
+      "DD-P3-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P5",
+     "after": [
+      "DD-P5-1",
+      "DD-P5-2",
+      "DD-P5-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P5",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-R16-8",
+   "series": "DD",
+   "stage": "ko",
+   "round": "R16",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P6",
+     "after": [
+      "DD-P6-1",
+      "DD-P6-2",
+      "DD-P6-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P6",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P8",
+     "after": [
+      "DD-P8-1",
+      "DD-P8-2",
+      "DD-P8-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P8",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-QF-1",
+   "series": "DD",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner DD-R16-1",
+     "after": [
+      "DD-R16-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-1"
+     }
+    },
+    {
+     "label": "Winner DD-R16-2",
+     "after": [
+      "DD-R16-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-QF-2",
+   "series": "DD",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner DD-R16-3",
+     "after": [
+      "DD-R16-3"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-3"
+     }
+    },
+    {
+     "label": "Winner DD-R16-4",
+     "after": [
+      "DD-R16-4"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-QF-3",
+   "series": "DD",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner DD-R16-5",
+     "after": [
+      "DD-R16-5"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-5"
+     }
+    },
+    {
+     "label": "Winner DD-R16-6",
+     "after": [
+      "DD-R16-6"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-6"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-QF-4",
+   "series": "DD",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner DD-R16-7",
+     "after": [
+      "DD-R16-7"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-7"
+     }
+    },
+    {
+     "label": "Winner DD-R16-8",
+     "after": [
+      "DD-R16-8"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-R16-8"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-SF-1",
+   "series": "DD",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 4,
+   "slots": [
+    {
+     "label": "Winner DD-QF-1",
+     "after": [
+      "DD-QF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-QF-1"
+     }
+    },
+    {
+     "label": "Winner DD-QF-2",
+     "after": [
+      "DD-QF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-QF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-SF-2",
+   "series": "DD",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 4,
+   "slots": [
+    {
+     "label": "Winner DD-QF-3",
+     "after": [
+      "DD-QF-3"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-QF-3"
+     }
+    },
+    {
+     "label": "Winner DD-QF-4",
+     "after": [
+      "DD-QF-4"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-QF-4"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DD-F",
+   "series": "DD",
+   "stage": "ko",
+   "round": "F",
+   "round_index": 5,
+   "slots": [
+    {
+     "label": "Winner DD-SF-1",
+     "after": [
+      "DD-SF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-SF-1"
+     }
+    },
+    {
+     "label": "Winner DD-SF-2",
+     "after": [
+      "DD-SF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DD-SF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DR-P1-1",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "DR-06",
+    "DR-13"
+   ]
+  },
+  {
+   "id": "DR-P1-2",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "DR-07",
+    "DR-12"
+   ]
+  },
+  {
+   "id": "DR-P1-3",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "DR-01",
+    "DR-13"
+   ]
+  },
+  {
+   "id": "DR-P1-4",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "DR-06",
+    "DR-07"
+   ]
+  },
+  {
+   "id": "DR-P1-5",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "DR-01",
+    "DR-12"
+   ]
+  },
+  {
+   "id": "DR-P1-6",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "DR-13",
+    "DR-07"
+   ]
+  },
+  {
+   "id": "DR-P1-7",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 4,
+   "teams": [
+    "DR-01",
+    "DR-07"
+   ]
+  },
+  {
+   "id": "DR-P1-8",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 4,
+   "teams": [
+    "DR-12",
+    "DR-06"
+   ]
+  },
+  {
+   "id": "DR-P1-9",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 5,
+   "teams": [
+    "DR-01",
+    "DR-06"
+   ]
+  },
+  {
+   "id": "DR-P1-10",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 5,
+   "teams": [
+    "DR-12",
+    "DR-13"
+   ]
+  },
+  {
+   "id": "DR-P2-1",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "DR-05",
+    "DR-14"
+   ]
+  },
+  {
+   "id": "DR-P2-2",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "DR-08",
+    "DR-11"
+   ]
+  },
+  {
+   "id": "DR-P2-3",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "DR-02",
+    "DR-14"
+   ]
+  },
+  {
+   "id": "DR-P2-4",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "DR-05",
+    "DR-08"
+   ]
+  },
+  {
+   "id": "DR-P2-5",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "DR-02",
+    "DR-11"
+   ]
+  },
+  {
+   "id": "DR-P2-6",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "DR-14",
+    "DR-08"
+   ]
+  },
+  {
+   "id": "DR-P2-7",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 4,
+   "teams": [
+    "DR-02",
+    "DR-08"
+   ]
+  },
+  {
+   "id": "DR-P2-8",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 4,
+   "teams": [
+    "DR-11",
+    "DR-05"
+   ]
+  },
+  {
+   "id": "DR-P2-9",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 5,
+   "teams": [
+    "DR-02",
+    "DR-05"
+   ]
+  },
+  {
+   "id": "DR-P2-10",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 5,
+   "teams": [
+    "DR-11",
+    "DR-14"
+   ]
+  },
+  {
+   "id": "DR-P3-1",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 1,
+   "teams": [
+    "DR-04",
+    "DR-15"
+   ]
+  },
+  {
+   "id": "DR-P3-2",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 1,
+   "teams": [
+    "DR-09",
+    "DR-10"
+   ]
+  },
+  {
+   "id": "DR-P3-3",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 2,
+   "teams": [
+    "DR-03",
+    "DR-15"
+   ]
+  },
+  {
+   "id": "DR-P3-4",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 2,
+   "teams": [
+    "DR-04",
+    "DR-09"
+   ]
+  },
+  {
+   "id": "DR-P3-5",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 3,
+   "teams": [
+    "DR-03",
+    "DR-10"
+   ]
+  },
+  {
+   "id": "DR-P3-6",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 3,
+   "teams": [
+    "DR-15",
+    "DR-09"
+   ]
+  },
+  {
+   "id": "DR-P3-7",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 4,
+   "teams": [
+    "DR-03",
+    "DR-09"
+   ]
+  },
+  {
+   "id": "DR-P3-8",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 4,
+   "teams": [
+    "DR-10",
+    "DR-04"
+   ]
+  },
+  {
+   "id": "DR-P3-9",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 5,
+   "teams": [
+    "DR-03",
+    "DR-04"
+   ]
+  },
+  {
+   "id": "DR-P3-10",
+   "series": "DR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 5,
+   "teams": [
+    "DR-10",
+    "DR-15"
+   ]
+  },
+  {
+   "id": "DR-QF-1",
+   "series": "DR",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "2nd P3",
+     "after": [
+      "DR-P3-1",
+      "DR-P3-2",
+      "DR-P3-3",
+      "DR-P3-4",
+      "DR-P3-5",
+      "DR-P3-6",
+      "DR-P3-7",
+      "DR-P3-8",
+      "DR-P3-9",
+      "DR-P3-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 2
+     }
+    },
+    {
+     "label": "2nd P2",
+     "after": [
+      "DR-P2-1",
+      "DR-P2-2",
+      "DR-P2-3",
+      "DR-P2-4",
+      "DR-P2-5",
+      "DR-P2-6",
+      "DR-P2-7",
+      "DR-P2-8",
+      "DR-P2-9",
+      "DR-P2-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DR-QF-2",
+   "series": "DR",
+   "stage": "ko",
+   "round": "QF",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P3",
+     "after": [
+      "DR-P3-1",
+      "DR-P3-2",
+      "DR-P3-3",
+      "DR-P3-4",
+      "DR-P3-5",
+      "DR-P3-6",
+      "DR-P3-7",
+      "DR-P3-8",
+      "DR-P3-9",
+      "DR-P3-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 1
+     }
+    },
+    {
+     "label": "2nd P1",
+     "after": [
+      "DR-P1-1",
+      "DR-P1-2",
+      "DR-P1-3",
+      "DR-P1-4",
+      "DR-P1-5",
+      "DR-P1-6",
+      "DR-P1-7",
+      "DR-P1-8",
+      "DR-P1-9",
+      "DR-P1-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "DR-SF-1",
+   "series": "DR",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P1",
+     "after": [
+      "DR-P1-1",
+      "DR-P1-2",
+      "DR-P1-3",
+      "DR-P1-4",
+      "DR-P1-5",
+      "DR-P1-6",
+      "DR-P1-7",
+      "DR-P1-8",
+      "DR-P1-9",
+      "DR-P1-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 1
+     }
+    },
+    {
+     "label": "Winner DR-QF-1",
+     "after": [
+      "DR-QF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DR-QF-1"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DR-SF-2",
+   "series": "DR",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P2",
+     "after": [
+      "DR-P2-1",
+      "DR-P2-2",
+      "DR-P2-3",
+      "DR-P2-4",
+      "DR-P2-5",
+      "DR-P2-6",
+      "DR-P2-7",
+      "DR-P2-8",
+      "DR-P2-9",
+      "DR-P2-10"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 1
+     }
+    },
+    {
+     "label": "Winner DR-QF-2",
+     "after": [
+      "DR-QF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DR-QF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "DR-F",
+   "series": "DR",
+   "stage": "ko",
+   "round": "F",
+   "round_index": 3,
+   "slots": [
+    {
+     "label": "Winner DR-SF-1",
+     "after": [
+      "DR-SF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DR-SF-1"
+     }
+    },
+    {
+     "label": "Winner DR-SF-2",
+     "after": [
+      "DR-SF-2"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "DR-SF-2"
+     }
+    }
+   ]
+  },
+  {
+   "id": "RR-P1-1",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "RR-01",
+    "RR-10"
+   ]
+  },
+  {
+   "id": "RR-P1-2",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 1,
+   "teams": [
+    "RR-06",
+    "RR-07"
+   ]
+  },
+  {
+   "id": "RR-P1-3",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "RR-01",
+    "RR-07"
+   ]
+  },
+  {
+   "id": "RR-P1-4",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 2,
+   "teams": [
+    "RR-10",
+    "RR-06"
+   ]
+  },
+  {
+   "id": "RR-P1-5",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "RR-01",
+    "RR-06"
+   ]
+  },
+  {
+   "id": "RR-P1-6",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P1",
+   "round": 3,
+   "teams": [
+    "RR-07",
+    "RR-10"
+   ]
+  },
+  {
+   "id": "RR-P2-1",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 1,
+   "teams": [
+    "RR-05",
+    "RR-08"
+   ]
+  },
+  {
+   "id": "RR-P2-2",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 2,
+   "teams": [
+    "RR-02",
+    "RR-08"
+   ]
+  },
+  {
+   "id": "RR-P2-3",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P2",
+   "round": 3,
+   "teams": [
+    "RR-02",
+    "RR-05"
+   ]
+  },
+  {
+   "id": "RR-P3-1",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 1,
+   "teams": [
+    "RR-04",
+    "RR-09"
+   ]
+  },
+  {
+   "id": "RR-P3-2",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 2,
+   "teams": [
+    "RR-03",
+    "RR-09"
+   ]
+  },
+  {
+   "id": "RR-P3-3",
+   "series": "RR",
+   "stage": "pool",
+   "pool": "P3",
+   "round": 3,
+   "teams": [
+    "RR-03",
+    "RR-04"
+   ]
+  },
+  {
+   "id": "RR-SF-1",
+   "series": "RR",
+   "stage": "ko",
+   "round": "SF",
+   "round_index": 1,
+   "slots": [
+    {
+     "label": "1st P2",
+     "after": [
+      "RR-P2-1",
+      "RR-P2-2",
+      "RR-P2-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P2",
+      "rank": 1
+     }
+    },
+    {
+     "label": "1st P3",
+     "after": [
+      "RR-P3-1",
+      "RR-P3-2",
+      "RR-P3-3"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P3",
+      "rank": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "RR-F",
+   "series": "RR",
+   "stage": "ko",
+   "round": "F",
+   "round_index": 2,
+   "slots": [
+    {
+     "label": "1st P1",
+     "after": [
+      "RR-P1-1",
+      "RR-P1-2",
+      "RR-P1-3",
+      "RR-P1-4",
+      "RR-P1-5",
+      "RR-P1-6"
+     ],
+     "source": {
+      "type": "pool",
+      "pool": "P1",
+      "rank": 1
+     }
+    },
+    {
+     "label": "Winner RR-SF-1",
+     "after": [
+      "RR-SF-1"
+     ],
+     "source": {
+      "type": "winner",
+      "match": "RR-SF-1"
+     }
+    }
+   ]
+  }
+ ]
+}

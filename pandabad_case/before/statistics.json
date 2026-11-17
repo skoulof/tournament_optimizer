@@ -1,0 +1,600 @@
+{
+ "info": {
+  "name": "Example tournament pandabad",
+  "t0": 510,
+  "courts": 7,
+  "match_duration": 30,
+  "min_rest": 20,
+  "matches": 138,
+  "teams": 78,
+  "solver": "CP-SAT (FEASIBLE)",
+  "end_limit": "20:00",
+  "weights": "weights: gaps free up to 60 min, day length 78/min, KO wait 1, wait tiers [>60:+2, >90:+6, >120:+20, >180:+100], pool spread 2, series spread 5, overtime 780/min"
+ },
+ "plan": {
+  "all": {
+   "n": 198,
+   "mean": 44.05050505050505,
+   "median": 30.0,
+   "p90": 80,
+   "max": 300.0,
+   "total": 8722.0
+  },
+  "worst_any": 340,
+  "n_judged": 198,
+  "over": {
+   "60": 66,
+   "90": 15,
+   "120": 5,
+   "180": 4
+  },
+  "gaps": {
+   "n": 120,
+   "mean": 39.083333333333336,
+   "median": 30.0,
+   "p90": 80,
+   "max": 110,
+   "total": 4690
+  },
+  "entry_exp": {
+   "n": 43,
+   "mean": 66.79069767441861,
+   "median": 46.66666666666667,
+   "p90": 105.0,
+   "max": 300.0,
+   "total": 2872.0
+  },
+  "rounds": {
+   "n": 35,
+   "mean": 33.142857142857146,
+   "median": 20,
+   "p90": 60,
+   "max": 80,
+   "total": 1160
+  },
+  "idle": {
+   "n": 78,
+   "mean": 60.12820512820513,
+   "median": 55.0,
+   "p90": 140,
+   "max": 170,
+   "total": 4690
+  },
+  "wait_index": 17.61111111111111,
+  "grade": "C",
+  "entry_wait": {
+   "n": 78,
+   "mean": 78.46153846153847,
+   "median": 50.0,
+   "p90": 220,
+   "max": 340,
+   "total": 6120
+  },
+  "stay_out": {
+   "n": 78,
+   "mean": 166.28205128205127,
+   "median": 160.0,
+   "p90": 290,
+   "max": 320,
+   "total": 12970
+  },
+  "stay_fin": {
+   "n": 78,
+   "mean": 416.28205128205127,
+   "median": 430.0,
+   "p90": 560,
+   "max": 670,
+   "total": 32470
+  },
+  "span_fin": {
+   "n": 78,
+   "mean": 386.28205128205127,
+   "median": 400.0,
+   "p90": 530,
+   "max": 640,
+   "total": 30130
+  },
+  "play_share_out": 0.47241168100146175,
+  "play_share_fin": 0.44168847139427897,
+  "makespan": 670,
+  "busy": 4140,
+  "court_use": 0.8827292110874201,
+  "idle_court": 550,
+  "matches_per_hour": 12.358208955223882,
+  "min_gap": 30,
+  "thresholds": [
+   60,
+   90,
+   120,
+   180
+  ],
+  "pool_stretch_total": 60.0,
+  "pool_stretch_rel": 0.015748031496062992,
+  "pool_stretch_max_rel": 0.2,
+  "series_stretch_total": 530.0,
+  "series_stretch_rel": 0.7361111111111112,
+  "full_until": "17:10",
+  "idle_tail": 460.0,
+  "hours": [
+   {
+    "hour": "08:00",
+    "use": 0.762
+   },
+   {
+    "hour": "09:00",
+    "use": 1.0
+   },
+   {
+    "hour": "10:00",
+    "use": 1.0
+   },
+   {
+    "hour": "11:00",
+    "use": 1.0
+   },
+   {
+    "hour": "12:00",
+    "use": 1.0
+   },
+   {
+    "hour": "13:00",
+    "use": 1.0
+   },
+   {
+    "hour": "14:00",
+    "use": 1.0
+   },
+   {
+    "hour": "15:00",
+    "use": 1.0
+   },
+   {
+    "hour": "16:00",
+    "use": 1.0
+   },
+   {
+    "hour": "17:00",
+    "use": 0.833
+   },
+   {
+    "hour": "18:00",
+    "use": 0.476
+   },
+   {
+    "hour": "19:00",
+    "use": 0.25
+   }
+  ],
+  "conv_first": "08:00",
+  "conv_last": "16:10",
+  "conv_distinct": 28,
+  "top_gaps": [
+   {
+    "minutes": 110,
+    "team": "DR-10",
+    "from": 48,
+    "to": 80
+   },
+   {
+    "minutes": 110,
+    "team": "DR-05",
+    "from": 14,
+    "to": 47
+   },
+   {
+    "minutes": 100,
+    "team": "DR-04",
+    "from": 66,
+    "to": 97
+   },
+   {
+    "minutes": 90,
+    "team": "DR-13",
+    "from": 82,
+    "to": 111
+   },
+   {
+    "minutes": 90,
+    "team": "DR-11",
+    "from": 3,
+    "to": 31
+   }
+  ],
+  "longest": {
+   "team": "DR-05",
+   "span": 640,
+   "idle": 460,
+   "first": "08:30",
+   "end": "19:10"
+  },
+  "day_start": "08:30",
+  "day_end": "19:40"
+ },
+ "series": [
+  {
+   "all": {
+    "n": 54,
+    "mean": 48.88888888888889,
+    "median": 36.666666666666686,
+    "p90": 80,
+    "max": 236.66666666666666,
+    "total": 2640.0
+   },
+   "worst_any": 270,
+   "n_judged": 54,
+   "over": {
+    "60": 24,
+    "90": 6,
+    "120": 2,
+    "180": 2
+   },
+   "gaps": {
+    "n": 24,
+    "mean": 41.666666666666664,
+    "median": 30.0,
+    "p90": 80,
+    "max": 90,
+    "total": 1000
+   },
+   "entry_exp": {
+    "n": 16,
+    "mean": 75.00000000000001,
+    "median": 50.0,
+    "p90": 226.66666666666666,
+    "max": 236.66666666666666,
+    "total": 1200.0000000000002
+   },
+   "rounds": {
+    "n": 14,
+    "mean": 31.428571428571427,
+    "median": 25.0,
+    "p90": 60,
+    "max": 60,
+    "total": 440
+   },
+   "idle": {
+    "n": 24,
+    "mean": 41.666666666666664,
+    "median": 30.0,
+    "p90": 80,
+    "max": 90,
+    "total": 1000
+   },
+   "wait_index": 22.03703703703704,
+   "grade": "C",
+   "entry_wait": {
+    "n": 24,
+    "mean": 83.75,
+    "median": 60.0,
+    "p90": 220,
+    "max": 270,
+    "total": 2010
+   },
+   "stay_out": {
+    "n": 24,
+    "mean": 131.66666666666666,
+    "median": 120.0,
+    "p90": 170,
+    "max": 180,
+    "total": 3160
+   },
+   "stay_fin": {
+    "n": 24,
+    "mean": 414.1666666666667,
+    "median": 390.0,
+    "p90": 560,
+    "max": 620,
+    "total": 9940
+   },
+   "span_fin": {
+    "n": 24,
+    "mean": 384.1666666666667,
+    "median": 360.0,
+    "p90": 530,
+    "max": 590,
+    "total": 9220
+   },
+   "play_share_out": 0.47186014557338085,
+   "play_share_fin": 0.4475780582590434,
+   "name": "NP",
+   "teams": 24,
+   "matches": 39,
+   "first": "09:40",
+   "last": "19:30",
+   "pools_start": "09:40",
+   "pools_done": "16:00",
+   "stretch": 230,
+   "pool_phase_min": 150,
+   "stretch_rel": 1.5333333333333334
+  },
+  {
+   "all": {
+    "n": 71,
+    "mean": 40.93896713615023,
+    "median": 40,
+    "p90": 70,
+    "max": 105.0,
+    "total": 2906.6666666666665
+   },
+   "worst_any": 110,
+   "n_judged": 71,
+   "over": {
+    "60": 24,
+    "90": 3,
+    "120": 0,
+    "180": 0
+   },
+   "gaps": {
+    "n": 37,
+    "mean": 39.189189189189186,
+    "median": 30,
+    "p90": 80,
+    "max": 90,
+    "total": 1450
+   },
+   "entry_exp": {
+    "n": 18,
+    "mean": 47.03703703703703,
+    "median": 43.33333333333333,
+    "p90": 66.66666666666666,
+    "max": 105.0,
+    "total": 846.6666666666666
+   },
+   "rounds": {
+    "n": 16,
+    "mean": 38.125,
+    "median": 25.0,
+    "p90": 70,
+    "max": 80,
+    "total": 610
+   },
+   "idle": {
+    "n": 29,
+    "mean": 50,
+    "median": 50,
+    "p90": 90,
+    "max": 90,
+    "total": 1450
+   },
+   "wait_index": 13.826291079812206,
+   "grade": "B",
+   "entry_wait": {
+    "n": 29,
+    "mean": 58.62068965517241,
+    "median": 40,
+    "p90": 100,
+    "max": 110,
+    "total": 1700
+   },
+   "stay_out": {
+    "n": 29,
+    "mean": 148.27586206896552,
+    "median": 160,
+    "p90": 190,
+    "max": 210,
+    "total": 4300
+   },
+   "stay_fin": {
+    "n": 29,
+    "mean": 431.37931034482756,
+    "median": 440,
+    "p90": 460,
+    "max": 470,
+    "total": 12510
+   },
+   "span_fin": {
+    "n": 29,
+    "mean": 401.37931034482756,
+    "median": 410,
+    "p90": 430,
+    "max": 440,
+    "total": 11640
+   },
+   "play_share_out": 0.47157881529878964,
+   "play_share_fin": 0.43753642045187874,
+   "name": "DD",
+   "teams": 29,
+   "matches": 50,
+   "first": "08:30",
+   "last": "15:50",
+   "pools_start": "08:30",
+   "pools_done": "11:40",
+   "stretch": 40,
+   "pool_phase_min": 150,
+   "stretch_rel": 0.26666666666666666
+  },
+  {
+   "all": {
+    "n": 55,
+    "mean": 48.58181818181818,
+    "median": 30,
+    "p90": 90,
+    "max": 300.0,
+    "total": 2672.0
+   },
+   "worst_any": 340,
+   "n_judged": 55,
+   "over": {
+    "60": 14,
+    "90": 6,
+    "120": 3,
+    "180": 2
+   },
+   "gaps": {
+    "n": 45,
+    "mean": 41.333333333333336,
+    "median": 30,
+    "p90": 90,
+    "max": 110,
+    "total": 1860
+   },
+   "entry_exp": {
+    "n": 6,
+    "mean": 120.33333333333333,
+    "median": 58.0,
+    "p90": 300.0,
+    "max": 300.0,
+    "total": 722.0
+   },
+   "rounds": {
+    "n": 4,
+    "mean": 22.5,
+    "median": 20.0,
+    "p90": 30,
+    "max": 30,
+    "total": 90
+   },
+   "idle": {
+    "n": 15,
+    "mean": 124,
+    "median": 140,
+    "p90": 150,
+    "max": 170,
+    "total": 1860
+   },
+   "wait_index": 22.036363636363635,
+   "grade": "C",
+   "entry_wait": {
+    "n": 15,
+    "mean": 138.66666666666666,
+    "median": 60,
+    "p90": 290,
+    "max": 340,
+    "total": 2080
+   },
+   "stay_out": {
+    "n": 15,
+    "mean": 274,
+    "median": 290,
+    "p90": 300,
+    "max": 320,
+    "total": 4110
+   },
+   "stay_fin": {
+    "n": 15,
+    "mean": 512.6666666666666,
+    "median": 450,
+    "p90": 670,
+    "max": 670,
+    "total": 7690
+   },
+   "span_fin": {
+    "n": 15,
+    "mean": 482.6666666666667,
+    "median": 420,
+    "p90": 640,
+    "max": 640,
+    "total": 7240
+   },
+   "play_share_out": 0.44439091992465307,
+   "play_share_fin": 0.38711386419126786,
+   "name": "DR",
+   "teams": 15,
+   "matches": 35,
+   "first": "08:30",
+   "last": "19:10",
+   "pools_start": "08:30",
+   "pools_done": "16:40",
+   "stretch": 220,
+   "pool_phase_min": 270,
+   "stretch_rel": 0.8148148148148148
+  },
+  {
+   "all": {
+    "n": 18,
+    "mean": 27.96296296296296,
+    "median": 20.0,
+    "p90": 70,
+    "max": 70,
+    "total": 503.33333333333326
+   },
+   "worst_any": 80,
+   "n_judged": 18,
+   "over": {
+    "60": 4,
+    "90": 0,
+    "120": 0,
+    "180": 0
+   },
+   "gaps": {
+    "n": 14,
+    "mean": 27.142857142857142,
+    "median": 20.0,
+    "p90": 70,
+    "max": 70,
+    "total": 380
+   },
+   "entry_exp": {
+    "n": 3,
+    "mean": 34.44444444444442,
+    "median": 36.66666666666663,
+    "p90": 46.66666666666663,
+    "max": 46.66666666666663,
+    "total": 103.33333333333326
+   },
+   "rounds": {
+    "n": 1,
+    "mean": 20,
+    "median": 20,
+    "p90": 20,
+    "max": 20,
+    "total": 20
+   },
+   "idle": {
+    "n": 10,
+    "mean": 38,
+    "median": 40.0,
+    "p90": 70,
+    "max": 70,
+    "total": 380
+   },
+   "wait_index": 5.740740740740737,
+   "grade": "B",
+   "entry_wait": {
+    "n": 10,
+    "mean": 33,
+    "median": 20.0,
+    "p90": 70,
+    "max": 80,
+    "total": 330
+   },
+   "stay_out": {
+    "n": 10,
+    "mean": 140,
+    "median": 160.0,
+    "p90": 160,
+    "max": 160,
+    "total": 1400
+   },
+   "stay_fin": {
+    "n": 10,
+    "mean": 233,
+    "median": 215.0,
+    "p90": 270,
+    "max": 270,
+    "total": 2330
+   },
+   "span_fin": {
+    "n": 10,
+    "mean": 203,
+    "median": 185.0,
+    "p90": 240,
+    "max": 240,
+    "total": 2030
+   },
+   "play_share_out": 0.5181818181818182,
+   "play_share_fin": 0.5214563214563215,
+   "name": "RR",
+   "teams": 10,
+   "matches": 14,
+   "first": "15:40",
+   "last": "19:40",
+   "pools_start": "15:40",
+   "pools_done": "18:50",
+   "stretch": 40,
+   "pool_phase_min": 150,
+   "stretch_rel": 0.26666666666666666
+  }
+ ],
+ "simulation": null
+}

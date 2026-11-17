@@ -1,0 +1,25 @@
+[event]
+name = "Small club event"
+start_time = "09:00"
+courts = 3
+match_duration = 25
+min_rest = 15
+convocation_lead = 45
+convocation_rounding = 15
+
+[[series]]
+name = "Duo"
+teams = 2
+
+[[series]]
+name = "Trio"
+teams = 3
+
+[[series]]
+name = "Seven"
+teams = 7
+
+[[series]]
+name = "Mixed doubles"
+teams = 9
+match_duration = 35

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Badminton tournament planner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='24' r='6' fill='%23176a4f'/%3E%3Cpath d='M10 20 L6 4 M16 18 L16 2 M22 20 L26 4' stroke='%23176a4f' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="brand" data-i18n="app.title">Badminton tournament planner</div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="setup" data-i18n="tab.setup">1 · Tournament setup</button>
+    <button class="tab" data-tab="schedule" data-i18n="tab.schedule">2 · Schedule</button>
+    <button class="tab" data-tab="history" data-i18n="tab.history">History</button>
+  </nav>
+  <select id="lang" class="lang" hidden></select>
+  <a href="/logout" id="logout" class="btn small ghost" hidden data-i18n="auth.logout">Log out</a>
+</header>
+
+<main>
+  <!-- ======================================================= STEP 1 -->
+  <section id="tab-setup" class="panel active">
+    <div class="toolbar">
+      <button class="btn" id="setup-import" data-i18n="common.import">Import file…</button>
+      <button class="btn" id="setup-export" data-i18n="setup.export">Export config (.toml)</button>
+      <button class="btn ghost" id="setup-reset" data-i18n="common.reset">Reset to defaults</button>
+      <button class="btn" id="example-toggle" data-i18n="ex.open">Generate an example…</button>
+      <span class="muted" id="setup-file"></span>
+      <input type="file" id="setup-file-input" accept=".toml,.json,.yaml,.yml" hidden>
+    </div>
+    <p class="intro" data-i18n="setup.intro"></p>
+
+    <div class="card" id="example-card" hidden>
+      <h2 data-i18n="ex.title">Generate an example</h2>
+      <p class="muted" data-i18n="ex.hint"></p>
+      <div class="disc-checks" id="ex-disc"></div>
+      <div class="grid" id="ex-fields"></div>
+      <div class="actions">
+        <button class="btn primary" id="example-generate" data-i18n="ex.generate">Generate series</button>
+        <button class="btn ghost" id="example-close" data-i18n="common.close">Close</button>
+        <span class="muted" id="example-result"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="setup.event">Event</h2>
+      <div class="grid" id="setup-event"></div>
+    </div>
+
+    <details class="card">
+      <summary><h2 data-i18n="setup.rules">Format rules</h2><span class="muted" data-i18n="setup.rules_hint"></span></summary>
+      <div class="grid" id="setup-rules"></div>
+    </details>
+
+    <div class="card">
+      <h2 data-i18n="setup.series">Series</h2>
+      <table class="table series-table">
+        <thead><tr>
+          <th data-i18n="common.name">Name</th><th data-i18n="col.teams">Teams</th>
+          <th data-i18n="col.duration">Match duration</th><th data-i18n="col.pools">Pools</th>
+          <th data-i18n="col.qualifiers">Qualifiers</th><th data-i18n="col.single_pool">Single pool</th><th></th>
+        </tr></thead>
+        <tbody id="series-body"></tbody>
+      </table>
+      <button class="btn small" id="add-series" data-i18n="setup.add_series">Add series</button>
+    </div>
+
+    <div class="actions">
+      <label class="check"><input type="checkbox" id="setup-fit" checked> <span data-i18n="setup.fit">Adapt formats to the end time</span></label>
+      <button class="btn primary" id="propose" data-i18n="setup.propose">Propose formats</button>
+    </div>
+
+    <div class="card" id="proposals-card" hidden>
+      <h2 data-i18n="setup.proposals">Proposed formats</h2>
+      <div class="banner warn" id="proposals-stale" hidden data-i18n="setup.stale"></div>
+      <div id="estimate"></div>
+      <div id="proposals"></div>
+      <div class="actions">
+        <button class="btn ghost" id="reset-picks" data-i18n="setup.reset_picks">Back to the recommended formats</button>
+        <span class="spacer"></span>
+        <input type="text" id="setup-run-name" class="name-input" data-i18n-placeholder="common.name">
+        <button class="btn primary" id="generate" data-i18n="setup.generate">Generate tournament</button>
+      </div>
+      <div id="generated" class="banner ok" hidden></div>
+      <details class="report"><summary data-i18n="setup.report">Text report</summary><pre id="setup-report"></pre></details>
+    </div>
+  </section>
+
+  <!-- ======================================================= STEP 2 -->
+  <section id="tab-schedule" class="panel">
+    <div class="toolbar">
+      <button class="btn" id="settings-import" data-i18n="sch.import_settings">Import settings…</button>
+      <button class="btn" id="settings-export" data-i18n="sch.export_settings">Export settings (.json)</button>
+      <button class="btn ghost" id="settings-reset" data-i18n="common.reset">Reset to defaults</button>
+      <span class="muted" id="settings-file"></span>
+      <input type="file" id="settings-file-input" accept=".json" hidden>
+    </div>
+    <p class="intro" data-i18n="sch.intro"></p>
+
+    <div class="card">
+      <h2 data-i18n="sch.tournament">Tournament</h2>
+      <div class="toolbar inline">
+        <button class="btn" id="tournament-import" data-i18n="sch.import_tournament">Import tournament.json…</button>
+        <input type="file" id="tournament-file-input" accept=".json" hidden>
+        <span class="muted" data-i18n="sch.from_run">or from a setup run:</span>
+        <select id="setup-runs"></select>
+        <button class="btn" id="load-setup-run" data-i18n="sch.load">Load</button>
+      </div>
+      <div id="tournament-summary" class="muted" data-i18n="sch.no_tournament">No tournament loaded yet.</div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="sch.event">Event</h2>
+      <div class="grid" id="sch-event"></div>
+    </div>
+
+    <div class="cols">
+      <div class="card">
+        <h2 data-i18n="sch.optimizer">Optimizer</h2>
+        <div class="grid two" id="sch-optimizer"></div>
+      </div>
+      <div class="card">
+        <h2 data-i18n="sch.simulation">Simulation and output</h2>
+        <div class="grid two" id="sch-simulation"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="sch.weights">Objective</h2>
+      <p class="muted" data-i18n="sch.weights_hint"></p>
+      <div class="grid" id="sch-weights"></div>
+      <div class="cols">
+        <div>
+          <h3 data-i18n="sch.tiers">Wait tiers</h3>
+          <p class="muted small" data-i18n="sch.tiers_hint"></p>
+          <table class="table compact"><thead><tr><th data-i18n="col.threshold"></th><th data-i18n="col.extra_weight"></th><th></th></tr></thead>
+            <tbody id="tiers-body"></tbody></table>
+          <button class="btn small" id="add-tier" data-i18n="common.add">Add</button>
+        </div>
+        <div>
+          <h3 data-i18n="sch.steps">Wait steps</h3>
+          <p class="muted small" data-i18n="sch.steps_hint"></p>
+          <table class="table compact"><thead><tr><th data-i18n="col.threshold"></th><th data-i18n="col.fixed_cost"></th><th></th></tr></thead>
+            <tbody id="steps-body"></tbody></table>
+          <button class="btn small" id="add-step" data-i18n="common.add">Add</button>
+        </div>
+      </div>
+      <div class="curve" id="curve"></div>
+      <div class="rates" id="rates"></div>
+    </div>
+
+    <details class="card" id="sweep-card">
+      <summary><h2 data-i18n="sw.title">Explore a setting (sweep)</h2><span class="muted" data-i18n="sw.summary"></span></summary>
+      <p class="muted" data-i18n="sw.hint"></p>
+      <div class="grid">
+        <div class="field"><label for="sweep-param" data-i18n="sw.param">Setting</label><select id="sweep-param"></select></div>
+        <div class="field"><label for="sweep-values" data-i18n="sw.values">Values</label><input type="text" id="sweep-values">
+          <div class="hint" data-i18n="sw.values_hint"></div></div>
+      </div>
+      <div class="actions"><button class="btn primary" id="sweep-run" data-i18n="sw.run">Queue the sweep</button>
+        <span class="muted" id="sweep-note"></span></div>
+      <div class="banner ok" id="sweep-done" hidden></div>
+    </details>
+
+    <div class="actions">
+      <span class="spacer"></span>
+      <input type="text" id="sch-run-name" class="name-input" data-i18n-placeholder="sch.run_name">
+      <button class="btn primary" id="run-schedule" data-i18n="sch.run">Run schedule</button>
+    </div>
+
+    <div class="card" id="run-card" hidden>
+      <div class="run-head">
+        <h2><span data-i18n="sch.progress">Run</span>: <span id="run-name"></span></h2>
+        <span class="badge" id="run-status"></span>
+        <span class="spacer"></span>
+        <button class="btn primary small" id="run-stop" data-i18n="sch.stop" data-i18n-title="sch.stop_hint">Stop and keep best</button>
+        <button class="btn danger small" id="run-cancel" data-i18n="common.cancel" data-i18n-title="sch.cancel_hint">Cancel</button>
+      </div>
+      <div class="progress" id="run-progress"><div></div></div>
+      <div class="run-info"><span class="muted small" id="run-elapsed"></span><span class="best-so-far" id="run-best"></span></div>
+      <div class="banner warn" id="run-stopping" hidden data-i18n="sch.stopping"></div>
+      <div class="banner err" id="run-error" hidden></div>
+      <details id="log-box"><summary data-i18n="sch.log">Log</summary><pre id="run-log"></pre></details>
+    </div>
+
+    <div id="results" hidden>
+      <div class="card">
+        <h2 data-i18n="sch.results">Results</h2>
+        <div class="banner warn" id="results-note" hidden data-i18n="sch.stopped_early"></div>
+        <div class="tiles" id="tiles"></div>
+        <h3 data-i18n="bd.title">Where the cost goes</h3>
+        <div id="breakdown"></div>
+        <h3 data-i18n="sch.per_hour">Court use per hour</h3>
+        <div class="hours" id="hours"></div>
+        <div class="table-wrap"><table class="table" id="series-results"></table></div>
+        <div id="sim-results"></div>
+      </div>
+      <div class="card">
+        <div class="run-head">
+          <h2 data-i18n="sch.timeline">Timeline and convocations</h2>
+          <span class="spacer"></span>
+          <a class="btn small" id="timeline-open" target="_blank" data-i18n="sch.open_new_tab">Open in a new tab</a>
+        </div>
+        <iframe id="timeline" title="timeline"></iframe>
+      </div>
+      <div class="card">
+        <h2 data-i18n="sch.downloads">Files</h2>
+        <div class="downloads" id="downloads"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= HISTORY -->
+  <section id="tab-history" class="panel">
+    <div class="toolbar">
+      <button class="btn" id="hist-refresh" data-i18n="common.refresh">Refresh</button>
+      <button class="btn" id="hist-select-sweep" data-i18n="sw.select_last">Select last sweep</button>
+      <button class="btn primary" id="hist-compare" data-i18n="hist.compare">Compare selected</button>
+      <button class="btn danger" id="hist-delete" data-i18n="hist.delete_selected">Delete selected</button>
+    </div>
+    <p class="intro" data-i18n="hist.intro"></p>
+    <div class="card">
+      <div class="table-wrap"><table class="table" id="hist-table"></table></div>
+    </div>
+    <div class="card" id="compare-card" hidden>
+      <h2 data-i18n="hist.compare_title">Comparison</h2>
+      <div class="table-wrap"><table class="table" id="compare-table"></table></div>
+    </div>
+  </section>
+</main>
+
+<div id="toast"></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
